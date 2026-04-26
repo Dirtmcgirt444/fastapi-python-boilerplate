@@ -44,6 +44,11 @@ def read_root():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vercel + FastAPI</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <!-- Vercel Speed Insights -->
+        <script>
+            window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+        </script>
+        <script defer src="/_vercel/speed-insights/script.js"></script>
         <style>
             * {
                 margin: 0;
