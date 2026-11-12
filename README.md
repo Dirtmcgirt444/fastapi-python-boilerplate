@@ -1,28 +1,16 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Ffastapi&demo-title=FastAPI&demo-description=Use%20FastAPI%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fvercel-plus-fastapi.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
+# Pacific Line — Skate signal desk
 
-# FastAPI + Vercel
+Pacific Line is a focused, public-source research dashboard for finding skateboarding stories that may deserve a responsible video angle. It queries the Google News RSS feed for industry, people, and competition signals; it does not present rumor as fact.
 
-This example shows how to use FastAPI on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+## Safety and editorial use
 
-## Demo
+Open the primary source and corroborate material claims before publishing. The dashboard keeps its research niche focused on skate culture while encouraging context, response-seeking, and respect for privacy.
 
-https://vercel-plus-fastapi.vercel.app/
-
-## How it Works
-
-This example uses the Asynchronous Server Gateway Interface (ASGI) with FastAPI to enable handling requests on Vercel with Serverless Functions.
-
-## Running Locally
+## Run locally
 
 ```bash
-npm i -g vercel
-vercel dev
+pip install -e .
+fastapi dev main.py
 ```
 
-Your FastAPI application is now available at `http://localhost:3000`.
-
-## One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Ffastapi&demo-title=FastAPI&demo-description=Use%20FastAPI%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fvercel-plus-fastapi.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
+The app is then available at `http://127.0.0.1:8000`. The dashboard is served at `/` and the data endpoint is `/api/stories?topic=all|industry|people|competition`.
